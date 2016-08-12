@@ -1,0 +1,409 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"atu",
+				"auto_now_add"
+			],
+			[
+				"inc",
+				"include_5"
+			],
+			[
+				"key",
+				"key_str"
+			],
+			[
+				"tru",
+				"true_false"
+			],
+			[
+				"new",
+				"new_value"
+			],
+			[
+				"tr",
+				"true_false"
+			],
+			[
+				"cat",
+				"cats_or_dogs"
+			],
+			[
+				"num",
+				"num_child"
+			],
+			[
+				"to",
+				"to_sym"
+			],
+			[
+				"clien",
+				"client_hash"
+			],
+			[
+				"dic",
+				"dict_value_change"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"fur",
+				"fur_color"
+			],
+			[
+				"good",
+				"good_bad"
+			],
+			[
+				"en",
+				"encrypt"
+			],
+			[
+				"alpha",
+				"alpha_index"
+			],
+			[
+				"dec",
+				"decrypt"
+			],
+			[
+				"decr",
+				"decrypted_message"
+			],
+			[
+				"enc",
+				"encrypted_message"
+			],
+			[
+				"cause",
+				"cause_urls"
+			],
+			[
+				"dow",
+				"downcase"
+			],
+			[
+				"do",
+				"downcase"
+			],
+			[
+				"age",
+				"age_correct"
+			],
+			[
+				"like",
+				"likes_garlic"
+			],
+			[
+				"is",
+				"is_integer"
+			],
+			[
+				"year",
+				"year_born"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"b",
+				"background-image"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"text-a",
+				"text-align"
+			],
+			[
+				"ma",
+				"max-width"
+			],
+			[
+				"min-",
+				"min-width"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"background",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 107.0,
+		"last_filter": "Snippet: ",
+		"selected_items":
+		[
+			[
+				"Snippet: ",
+				"Snippet: snippet-test"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/davidrodgers/Desktop/Stuff/devbootcamp/phase-0-tracks/ruby/p.rb",
+		"/Users/davidrodgers/Desktop/Stuff/devbootcamp/phase-0-tracks/ruby/arrays_drill.rb",
+		"/Users/davidrodgers/Desktop/Stuff/devbootcamp/phase-0-tracks/ruby/hashes.rb",
+		"/Users/davidrodgers/Desktop/Stuff/devbootcamp/phase-0-tracks/ruby/vampires.rb",
+		"/Users/davidrodgers/Desktop/Stuff/devbootcamp/phase-0-tracks/ruby/method_detective.rb",
+		"/Users/davidrodgers/Desktop/css.css",
+		"/Users/davidrodgers/Desktop/Stuff/html.html",
+		"/Users/davidrodgers/Desktop/Stuff/devbootcamp/phase-0-tracks/ruby/hamsters.rb",
+		"/Users/davidrodgers/Desktop/Stuff/devbootcamp/phase-0-tracks/ruby/secret_agents.rb",
+		"/Users/davidrodgers/Desktop/Stuff/Polite/politicsjack/politicalaction/cause/views.py",
+		"/Users/davidrodgers/Desktop/Stuff/Polite/politicsjack/politicalaction/cause/models.py",
+		"/Users/davidrodgers/Desktop/Stuff/Polite/politicsjack/politicalaction/politicalaction/urls.py",
+		"/Users/davidrodgers/Desktop/Stuff/Polite/politicsjack/politicalaction/static/css/all.css",
+		"/Users/davidrodgers/Desktop/Stuff/Polite/politicsjack/politicalaction/templates/cause/cause_list.html",
+		"/Users/davidrodgers/Desktop/Stuff/Polite/politicsjack/politicalaction/member/models.py",
+		"/Users/davidrodgers/Desktop/Stuff/Polite/politicsjack/politicalaction/templates/base.html",
+		"/Users/davidrodgers/Desktop/Stuff/Polite/politicsjack/politicalaction/notification/models.py",
+		"/Users/davidrodgers/Desktop/Stuff/Polite/politicsjack/politicalaction/cause/forms.py",
+		"/Users/davidrodgers/Desktop/Stuff/Polite/politicsjack/politicalaction/notification/urls.py",
+		"/Users/davidrodgers/Desktop/Stuff/Polite/politicsjack/politicalaction/notification/forms.py",
+		"/Users/davidrodgers/Desktop/Stuff/Polite/politicsjack/politicalaction/member/urls.py",
+		"/Users/davidrodgers/Desktop/Stuff/Polite/politicsjack/politicalaction/member/views.py",
+		"/Users/davidrodgers/Desktop/Stuff/Polite/politicsjack/politicalaction/notification/views.py",
+		"/Users/davidrodgers/Desktop/Stuff/Polite/politicsjack/politicalaction/templates/cause/cause_base.html",
+		"/Users/davidrodgers/Desktop/Stuff/Polite/politicsjack/politicalaction/templates/notification/notification_detail.html",
+		"/Users/davidrodgers/Desktop/Stuff/Polite/politicsjack/politicalaction/templates/notification/user_cause_list.html",
+		"/Users/davidrodgers/Desktop/Stuff/Polite/politicsjack/politicalaction/templates/notification/notification_list.html",
+		"/Users/davidrodgers/Desktop/Stuff/Polite/politicsjack/politicalaction/templates/notification/notification_form.html",
+		"/Users/davidrodgers/Desktop/Stuff/Polite/politicsjack/politicalaction/templates/notification/notification_delete.html",
+		"/Users/davidrodgers/Desktop/Stuff/Polite/politicsjack/politicalaction/notification/admin.py",
+		"/Users/davidrodgers/Desktop/Stuff/Polite/politicsjack/politicalaction/templates/notification/notification_base.html",
+		"/Users/davidrodgers/Desktop/Stuff/Polite/politicsjack/politicalaction/politicalaction/settings.py",
+		"/Users/davidrodgers/Desktop/Stuff/Polite/politicsjack/politicalaction/templates/cause/cause_delete.html",
+		"/Users/davidrodgers/Desktop/Stuff/Polite/politicsjack/politicalaction/templates/notification/jknk.html",
+		"/Users/davidrodgers/Desktop/Stuff/Polite/politicsjack/politicalaction/cause/urls.py",
+		"/Users/davidrodgers/Desktop/Stuff/Polite/politicsjack/politicalaction/templates/cause/cause_detail.html",
+		"/Users/davidrodgers/Desktop/Stuff/Polite/politicsjack/politicalaction/templates/cause/user_cause_list.html",
+		"/Users/davidrodgers/Desktop/Stuff/Polite/politicsjack/politicalaction/templates/cause/cause_form.html",
+		"/Users/davidrodgers/Desktop/Stuff/Polite/politicsjack/politicalaction/cause/admin.py",
+		"/Users/davidrodgers/Desktop/Stuff/Polite/politicsjack/politicalaction/groups/models.py",
+		"/Users/davidrodgers/Desktop/Stuff/Polite/politicsjack/politicalaction/groups/admin.py",
+		"/Users/davidrodgers/Desktop/Stuff/Polite/politicalaction/politicalaction/interest/models.py",
+		"/Users/davidrodgers/Desktop/Stuff/Polite/politicalaction/politicalaction/cause/admin.py",
+		"/Users/davidrodgers/Desktop/Stuff/Polite/politicalaction/politicalaction/politicalaction/settings.py",
+		"/Users/davidrodgers/Desktop/Stuff/devbootcamp/phase-0-tracks/ruby/error.rb",
+		"/Users/davidrodgers/Desktop/Stuff/devbootcamp/phase-0-tracks/ruby/practice/loops.rb",
+		"/Users/davidrodgers/Desktop/Stuff/devbootcamp/phase-0-tracks/ruby/algorithms.txt",
+		"/Users/davidrodgers/Desktop/Stuff/devbootcamp/phase-0-tracks/ruby/practice/first.rb",
+		"/Users/davidrodgers/Desktop/Stuff/dtrodger.github.io/pricing.html",
+		"/Users/davidrodgers/Desktop/Stuff/dtrodger.github.io/gretsch.html",
+		"/Users/davidrodgers/Desktop/Stuff/dtrodger.github.io/fender.html",
+		"/Users/davidrodgers/Desktop/Stuff/dtrodger.github.io/index.html",
+		"/Users/davidrodgers/Desktop/Stuff/dtrodger.github.io/gibson.html",
+		"/Users/davidrodgers/Desktop/Stuff/dtrodger.github.io/css/style.css",
+		"/Users/davidrodgers/Desktop/Stuff/devbootcamp/phase-0-tracks/css/responsive/practice.css",
+		"/Users/davidrodgers/Desktop/Stuff/devbootcamp/phase-0-tracks/css/responsive/practice.",
+		"/Users/davidrodgers/Desktop/Stuff/devbootcamp/phase-0-tracks/css/css-demo/styles/fixed-contact.css",
+		"/Users/davidrodgers/Desktop/Stuff/devbootcamp/phase-0-tracks/css/css-demo/styles/practice.css",
+		"/Users/davidrodgers/Desktop/Stuff/devbootcamp/phase-0-tracks/css/css-demo/index.html",
+		"/Users/davidrodgers/Desktop/Stuff/devbootcamp/phase-0-tracks/css/css-demo/styles/elegant-styles.css",
+		"/Users/davidrodgers/Desktop/Stuff/devbootcamp/phase-0-tracks/css/responsive-design/style.css",
+		"/Users/davidrodgers/Desktop/Stuff/devbootcamp/phase-0-tracks/css/responsive-design/index.html",
+		"/Users/davidrodgers/Desktop/Stuff/devbootcamp/phase-0-tracks/css/positioning/index.css",
+		"/Users/davidrodgers/Desktop/Stuff/devbootcamp/phase-0-tracks/html/gps/index.html",
+		"/Users/davidrodgers/Desktop/Stuff/devbootcamp/phase-0-tracks/css/positioning/index.html",
+		"/Users/davidrodgers/Desktop/Stuff/devbootcamp/phase-0-tracks/css/positioning/index.",
+		"/Users/davidrodgers/Desktop/Stuff/devbootcamp/week-2-practice-assessment/british.html",
+		"/Users/davidrodgers/Desktop/Stuff/devbootcamp/week-2-practice-assessment/australia.html",
+		"/Users/davidrodgers/Desktop/Stuff/devbootcamp/week-2-practice-assessment/fiji.html",
+		"/Users/davidrodgers/Library/Application Support/Sublime Text 3/Packages/User/snippet-test.sublime-snippet",
+		"/Users/davidrodgers/Desktop/Stuff/devbootcamp/week-2-practice-assessment/index.html",
+		"/Users/davidrodgers/Desktop/Stuff/devbootcamp/phase-0-tracks/html/table-practice.html",
+		"/Users/davidrodgers/Desktop/Stuff/devbootcamp/phase-0-tracks/html/forms/example-form.html",
+		"/Users/davidrodgers/Desktop/Stuff/devbootcamp/phase-0-tracks/html/moon_bootz/product_details.html",
+		"/Users/davidrodgers/Desktop/Stuff/devbootcamp/phase-0-tracks/html/moon_bootz/index.html",
+		"/Users/davidrodgers/Desktop/Stuff/devbootcamp/phase-0-tracks/html/web_basics/index.html",
+		"/Users/davidrodgers/Desktop/Stuff/devbootcamp/phase-0-tracks/html/moon_bootz/contact.html",
+		"/Users/davidrodgers/Desktop/Stuff/devbootcamp/phase-0-tracks/html/web_basics/con",
+		"/Users/davidrodgers/Desktop/Stuff/devbootcamp/phase-0-tracks/.git/MERGE_MSG",
+		"/Users/davidrodgers/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/davidrodgers/Desktop/devbootcamp/gps11/phase-0-gps-1/awesome_page.md",
+		"/Users/davidrodgers/Desktop/devbootcamp/gps11/phase-0-gps-1/Rodgers-reflection.md",
+		"/Users/davidrodgers/Desktop/devbootcamp/gps11/phase-0-gps-1/README.md",
+		"/Users/davidrodgers/Desktop/devbootcamp/gps11/phase-0-gps-1/.git/MERGE_MSG",
+		"/Users/davidrodgers/Desktop/devbootcamp/gps11/phase-0-gps-1/new",
+		"/Users/davidrodgers/Desktop/devbootcamp/gps11/phase-0-gps-1/RE",
+		"/Users/davidrodgers/Desktop/devbootcamp/phase-0-tracks/version-control/git-definitions.md",
+		"/Users/davidrodgers/Desktop/devbootcamp/phase-0-tracks/.git/MERGE_MSG",
+		"/Users/davidrodgers/Desktop/folder/hobby.md"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"%}\">{{",
+			"static",
+			"datetime",
+			"num_employees"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 25.0
+	},
+	"pinned_build_system": "",
+	"project": "digitalmarket.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 190.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
