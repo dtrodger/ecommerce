@@ -20,9 +20,10 @@ def create_view(request):
 	# 	price = data.get("price")
 	# 	new_obj = Product.objects.create(title=title, description=description, price=price)
 	
-	template = "create_view.html"
+	template = "form.html"
 	context = {
-		"form" : form
+		"form" : form,
+		"submit_btn" : "Create Product",
 	}
 	return render(request, template, context)
 
@@ -32,10 +33,11 @@ def update_view(request, object_id=None):
 	if form.is_valid():
 		instance = form.save(commit=False)
 		instance.save()
-	template = "update_view.html"
+	template = "form.html"
 	context = {
 		"product" : product,
-		"form" : form
+		"form" : form,
+		"submit_btn" : "Update Product",
 	}
 	return render(request, template, context)
 
