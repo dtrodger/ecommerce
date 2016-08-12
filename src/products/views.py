@@ -1,13 +1,19 @@
 from django.http import Http404
 from django.shortcuts import render, get_object_or_404
+from django.views.generic.detail import DetailView
 from django.views.generic.list import ListView
 
 from .models import Product
 from .forms import ProductCreateForm, ProductModelCreateForm
 # Create your views here.
 
+class ProductDetailView(DetailView):
+	model = Product
+
+
 class ProductListView(ListView):
 	model = Product
+
 
 def create_view(request):
 	form = ProductModelCreateForm(request.POST or None)
