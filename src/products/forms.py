@@ -8,7 +8,7 @@ PUBLISH_CHOICES = (
 	('draft', 'Draft'),
 	)
 
-class ProductCreateForm(forms.Form):
+class ProductForm(forms.Form):
 	title = forms.CharField(label="Your Title", widget=forms.TextInput(
 			attrs={
 				"class": "custom-class",
@@ -41,7 +41,7 @@ class ProductCreateForm(forms.Form):
 			raise forms.ValidationError("Title must be grater than 3 characters long")
 
 
-class ProductModelCreateForm(forms.ModelForm):
+class ProductModelForm(forms.ModelForm):
 	publish = forms.ChoiceField(widget=forms.RadioSelect, choices=PUBLISH_CHOICES, required=False)
 
 	class Meta:
