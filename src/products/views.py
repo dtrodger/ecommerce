@@ -1,9 +1,13 @@
 from django.http import Http404
 from django.shortcuts import render, get_object_or_404
+from django.views.generic.list import ListView
 
 from .models import Product
 from .forms import ProductCreateForm, ProductModelCreateForm
 # Create your views here.
+
+class ProductListView(ListView):
+	model = Product
 
 def create_view(request):
 	form = ProductModelCreateForm(request.POST or None)
@@ -63,9 +67,9 @@ def detail_view(request, object_id=None):
 
 def list_view(request):
 	print request.user
-	queryset = Product.objects.all()
+	products = Product.objects.all()
 	template = "list_view.html"
 	context = {
-		"queryset" : queryset
+		"products" : products
 	}
 	return render(request, template, context)
