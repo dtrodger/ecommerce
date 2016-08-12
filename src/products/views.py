@@ -1,12 +1,29 @@
 from django.http import Http404
 from django.shortcuts import render, get_object_or_404
 from django.views.generic.detail import DetailView
+from django.views.generic.edit import CreateView, UpdateView
 from django.views.generic.list import ListView
 
-from digitalmarket.mixins import MultiSlugMixin
+from digitalmarket.mixins import MultiSlugMixin, SubmitBtnMixin
 
 from .models import Product
-from .forms import ProductCreateForm, ProductModelCreateForm
+from .forms import ProductForm, ProductModelForm
+
+
+class ProductCreateView(SubmitBtnMixin, CreateView):
+	model = Product
+	template_name = "form.html"
+	form_class = ProductModelForm
+	success_url = '/products/add/'
+	submit_btn = "Add Product"
+
+
+class ProductUpdateView(MultiSlugMixin, SubmitBtnMixin, UpdateView):
+	model = Product
+	template_name = "form.html"
+	form_class = ProductModelForm
+	success_url = '/products/'
+	submit_btn = "Update Product"
 
 
 class ProductDetailView(MultiSlugMixin, DetailView):
@@ -18,7 +35,7 @@ class ProductListView(ListView):
 
 
 def create_view(request):
-	form = ProductModelCreateForm(request.POST or None)
+	form = ProductModelForm(request.POST or None)
 	if form.is_valid():
 		#form.save()
 		instance = form.save(commit=False)
@@ -41,7 +58,7 @@ def create_view(request):
 
 def update_view(request, object_id=None):
 	product = get_object_or_404(Product, id=object_id)
-	form = ProductModelCreateForm(request.POST or None, instance=product)
+	form = ProductModelForm(request.POST or None, instance=product)
 	if form.is_valid():
 		instance = form.save(commit=False)
 		instance.save()
