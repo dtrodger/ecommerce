@@ -7,8 +7,18 @@ PUBLISH_CHOICES = (
 	)
 
 class ProductCreateForm(forms.Form):
-	title = forms.CharField()
-	description = forms.CharField(widget=forms.Textarea)
+	title = forms.CharField(label="Your Title", widget=forms.TextInput(
+			attrs={
+				"class": "custom-class",
+				"placeholder": "Title",
+			}
+	))
+	description = forms.CharField(widget=forms.Textarea(
+			attrs={
+				"class": "custom-class",
+				"placeholder": "Description",
+			}
+	))
 	price = forms.DecimalField()
 	publish = forms.ChoiceField(widget=forms.RadioSelect, choices=PUBLISH_CHOICES, required=False)
 
