@@ -4,13 +4,17 @@ from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView, UpdateView
 from django.views.generic.list import ListView
 
-from digitalmarket.mixins import SubmitBtnMixin
+from digitalmarket.mixins import (
+	LoginRequiredMixin,
+	SubmitBtnMixin
+	)
 
+from .mixins import ProductManagerMixin
 from .models import Product
 from .forms import ProductModelForm
 
 
-class ProductCreateView(SubmitBtnMixin, CreateView):
+class ProductCreateView(SubmitBtnMixin, LoginRequiredMixin, CreateView):
 	model = Product
 	template_name = "form.html"
 	form_class = ProductModelForm
@@ -25,20 +29,20 @@ class ProductCreateView(SubmitBtnMixin, CreateView):
 		return valid_data
 
 
-class ProductUpdateView(SubmitBtnMixin, UpdateView):
+class ProductUpdateView(SubmitBtnMixin, ProductManagerMixin, UpdateView):
 	model = Product
 	template_name = "form.html"
 	form_class = ProductModelForm
 	success_url = '/products/'
 	submit_btn = "Update Product"
 
-	def get_object(self, *args, **kwargs):
-		user = self.request.user
-		obj = super(ProductUpdateView, self).get_object(*args, **kwargs)
-		if obj.user == user or user in obj.managers.all():
-			return obj
-		else:
-			raise Http404
+	# def get_object(self, *args, **kwargs):
+	# 	user = self.request.user
+	# 	obj = super(ProductUpdateView, self).get_object(*args, **kwargs)
+	# 	if obj.user == user or user in obj.managers.all():
+	# 		return obj
+	# 	else:
+	# 		raise Http404
 
 
 class ProductDetailView(DetailView):
