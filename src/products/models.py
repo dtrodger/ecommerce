@@ -19,7 +19,7 @@ class Product(models.Model):
 		return self.title
 
 	def get_absolute_url(self):
-		return reverse("product_detail_slug_view", kwargs={"slug" : self.slug})
+		return reverse("products:detail_slug", kwargs={"slug" : self.slug})
 
 
 def create_slug(instance, new_slug=None):
