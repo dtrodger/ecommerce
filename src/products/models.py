@@ -1,6 +1,7 @@
 from django.conf import settings
 from django.db import models
 from django.db.models.signals import pre_save, post_save
+from django.core.urlresolvers import reverse
 from django.utils.text import slugify
 
 # Create your models here.
@@ -13,8 +14,12 @@ class Product(models.Model):
 	description = models.TextField(default="Default")
 	price = models.DecimalField(max_digits=100, decimal_places=2, default = 9.99, null=True)
 	sale_price = models.DecimalField(max_digits=100, decimal_places=2, default = 6.99, null=True, blank=True)
+
 	def __unicode__(self):
 		return self.title
+
+	def get_absolute_url(self):
+		return reverse("product_detail_slug_view", kwargs={"slug" : self.slug})
 
 
 def create_slug(instance, new_slug=None):
