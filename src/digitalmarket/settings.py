@@ -1,12 +1,7 @@
 
-# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'r1!&$5&95e9tsykbzdrj)i-phw^cb82d71e85_6!^r)ygdn9!k'
@@ -64,20 +59,12 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'digitalmarket.wsgi.application'
 
-
-# Database
-# https://docs.djangoproject.com/en/1.8/ref/settings/#databases
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
-
-# Internationalization
-# https://docs.djangoproject.com/en/1.8/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
 
@@ -89,11 +76,9 @@ USE_L10N = True
 
 USE_TZ = True
 
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.8/howto/static-files/
-
 STATIC_URL = '/static/'
+
+MEDIA_URL = '/media/'
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
@@ -101,4 +86,4 @@ STATICFILES_DIRS = (
 
 STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_cdn", "staticfiles")
 
-STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_cdn", "media")
+MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_cdn", "media")
