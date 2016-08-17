@@ -5,7 +5,7 @@ from django.core.urlresolvers import reverse
 from django.utils.text import slugify
 
 def download_media_location(instance, filename):
-	return "%/%s" %(instance.id, filename)
+	return "%s/%s" %(instance.user.username, filename)
 
 class Product(models.Model):
 	user = models.ForeignKey(settings.AUTH_USER_MODEL)
