@@ -1,9 +1,12 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
+<div class="row">
+<div class="col-sm-4 col-sm-offset-4">
 <h1>Product: {{ object.title }}</h1>
 <p>{{ object.description }}</p>
+</div>
+</div>
 
 {% if request.user.is_authenticated and object.media and object in request.user.myproducts.products.all %}
 <p><a href="{{ object.get_download }}">Download</a></p>
