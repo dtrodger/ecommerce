@@ -3,13 +3,22 @@
 <html>
 <head>
 	<link rel='stylesheet' href="{% static 'css/base.css' %}" />
+	<link rel='stylesheey' href="{% static 'bootstrap.min.css' %}">
+	<link rel='stylesheey' href="{% static 'bootstrap-theme.min.css' %}">
 	<title></title>
 	<style>
+	.main-content {
+		width: 800px;
+		margin: 0 auto;
+	}
 		{% block style %}{% endblock style %}
 	</style>
 </head>
 <body>
+	<div class="main-content">
 	{% block content %}
+	<p>this is awesome</p>
 	{% endblock content %}
+	</div>
 </body>
 </html>
