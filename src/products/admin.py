@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Product, MyProducts
+from .models import Product, MyProducts, Thumbnail
 
 class ProductAdmin(admin.ModelAdmin):
 	list_display = ["__unicode__", "description", "price", "sale_price"]
@@ -13,3 +13,5 @@ class ProductAdmin(admin.ModelAdmin):
 admin.site.register(Product, ProductAdmin)
 
 admin.site.register(MyProducts)
+
+admin.site.register(Thumbnail)
