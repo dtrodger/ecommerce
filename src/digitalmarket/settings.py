@@ -27,6 +27,7 @@ INSTALLED_APPS = (
     #My apps
     'products',
     'tags',
+    'analytics',
 )
 
 MIDDLEWARE_CLASSES = (
