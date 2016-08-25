@@ -35,6 +35,14 @@ class ProductCreateView(SubmitBtnMixin, LoginRequiredMixin, CreateView):
 		form.instance.user = user
 		valid_data = super(ProductCreateView, self).form_valid(form)
 		form.instance.managers.add(user)
+		tags = form.cleaned_data.get("tags")
+		if tags:
+			tag_list = tags.split(",")
+			
+			for tag in tag_list:
+				if not tag == " ":
+					new_tag = Tag.objects.get_or_create(title=str(tag).strip())[0]
+					new_tag.products.add(form.instance)
 		return valid_data
 
 
@@ -53,11 +61,15 @@ class ProductUpdateView(SubmitBtnMixin, ProductManagerMixin, UpdateView):
 	def form_valid(self, form):
 		valid_data = super(ProductUpdateView, self).form_valid(form)
 		tags = form.cleaned_data.get("tags")
+		obj = self.get_object()
+		obj.tag_set.clear()
 		if tags:
 			tag_list = tags.split(",")
+			
 			for tag in tag_list:
-				new_tag = Tag.objects.get_or_create(title=str(tag).strip())[0]
-				new_tag.products.add(self.get_object())
+				if not tag == " ":
+					new_tag = Tag.objects.get_or_create(title=str(tag).strip())[0]
+					new_tag.products.add(self.get_object())
 		return valid_data
 
 
