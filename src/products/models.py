@@ -13,7 +13,6 @@ def download_media_location(instance, filename):
 	return "%s/%s" %(instance.slug, filename)
 
 class Product(models.Model):
-	#user = models.OneToOneField(settings.AUTH_USER_MODEL)
 	user = models.ForeignKey(settings.AUTH_USER_MODEL)
 	managers = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name="managers_products", blank=True)
 	media = models.ImageField(blank=True, 
@@ -80,7 +79,7 @@ class Thumbnail(models.Model):
 		null=True, 
 		upload_to=thumbnail_location)
 
-	def __unicode__(self): # __str__(self):
+	def __unicode__(self):
 		return str(self.media.path)
 
 

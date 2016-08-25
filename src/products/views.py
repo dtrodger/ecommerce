@@ -46,7 +46,7 @@ class ProductUpdateView(SubmitBtnMixin, ProductManagerMixin, UpdateView):
 
 	def get_initial(self):
 		initial = super(ProductUpdateView, self).get_initial()
-		tags = self.objects.all().tag_set.all()
+		tags = self.get_object().tag_set.all()
 		initial["tags"] = ", ".join([x.title for x in tags])
 		return initial
 
